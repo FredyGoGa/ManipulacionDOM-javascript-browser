@@ -1,7 +1,7 @@
 // obtener referencias a los elementos del DOM
 const newItemForm = document.querySelector("#new-item-form");
 const newItemInput = document.querySelector("#new-item-input");
-const todoList = document.querySelector("#todo-list");
+const todoList = document.querySelector("#todolist");
 
 // crear una matriz vacía para almacenar las tareas
 let todos = [];
@@ -27,6 +27,7 @@ function renderTodoList() {
     // crear un elemento de texto para la descripción de la tarea
     const description = document.createElement("span");
     description.innerText = todo.description;
+    description.classList.add("description");
 
     // crear un botón para eliminar la tarea
     const deleteBtn = document.createElement("button");

@@ -2,33 +2,29 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="/css/main.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/js-brow-2/css/main.css">
   <title>TODO List</title>
 </head>
 
 <body>
-  <div class="wrap">
-    <div class="container">
-
-      <form id="new-item-form">
+  <main class="main">
+    <section id="section" class="section1">
+      <form id="new-item-form" class="form">
         <label for="new-item-input">Nueva tarea:</label>
-        <input type="text" id="new-item-input" name="newItem" />
-        <button type="submit">Add</button>
+        <input type="text" id="new-item-input" name="newItem" placeholder="Ingresa tu nueva tarea" />
+        <button type="submit" value="Add" onclick="saveTask()">Adicionar</button>
+        <ul class="list" id="todolist"></ul>
       </form>
 
+    </section>
 
-
-    </div>
-
-    <div class="container2">
-      <ul id="todo-list"></ul>
-    </div>
-  </div>
+  </main>
 
 
 
 
-  <script src="/js/index.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
